@@ -1,0 +1,17 @@
+version: '3'
+services:
+  jenkins:
+    image: jenkins
+    ports:
+      - "8889:8080"
+      - "50000:50000"
+    volumes:
+      - app-volume:/usr/src/app
+  tomcat:
+    build: .
+    ports:
+      - "8888:8080"
+    volumes:
+      - app-volume:/usr/src/app
+volumes:
+     app-volume: 

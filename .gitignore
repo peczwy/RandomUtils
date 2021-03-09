@@ -1,0 +1,9 @@
+# Code
+/**/.vs
+/**/bin
+/**/obj
+/**/packages
+/**/.idea/**
+/Short Talks/Architecture - Composing/CowsayWeb/nbproject/private/
+/Short Talks/Architecture - Composing/CowsayWeb/build/
+/Short Talks/Architecture - Composing/CowsayWeb/dist/

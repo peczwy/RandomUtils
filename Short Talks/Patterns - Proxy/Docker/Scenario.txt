@@ -1,0 +1,29 @@
+# I'm gonna need to check the machines
+docker-machine ls 
+
+# Probably start the default or create
+docker-machine start default
+docker-machine create default
+
+# Check IP
+docker-machine ip
+
+# docker-machine ssh
+
+# Can't remeber what I had?
+docker images
+
+# In case of fire pull jenkins
+docker pull jenkins
+
+# Start jenkins ... Dostêpny na http://IP:8085/
+docker run --name myjenkins --mount type=tmpfs,destination=/app -p 8085:8080 -p 50000:50000 jenkins 
+
+# Remove
+docker rm myjenkins -f
+
+# Shell
+docker exec -u 0 -it myjenkins bash
+
+# Check volume
+docker inspect -f '{{ .Mounts }}' myjenkins

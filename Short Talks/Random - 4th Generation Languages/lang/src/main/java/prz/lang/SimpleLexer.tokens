@@ -1,0 +1,10 @@
+NUMBER=1
+ID=2
+WS=3
+OP_1=4
+OP_2=5
+OP=6
+L_BRACKET=7
+R_BRACKET=8
+'('=7
+')'=8
